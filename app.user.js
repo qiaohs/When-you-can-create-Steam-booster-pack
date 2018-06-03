@@ -10,7 +10,7 @@
 // @namespace 			https://greasyfork.org/users/155548-黑山東雲光圈研究所
 // @namespace 			https://steamcommunity.com/profiles/76561198132556503
 // ==/UserScript==
-$J('.booster_goo_cost').after('<div id='atime_insert' style="color: #f56795;margin-bottom: 12px;"></div>');
+$J('.booster_goo_cost').after("<div id='atime_insert" style="color: #f56795;margin-bottom: 12px;"></div>');
 $J( '#booster_game_selector' ).change( function() {
 	var atime = CBoosterCreatorPage.sm_rgBoosterData[$J(this).val()].available_at_time;
 	if(atime){
